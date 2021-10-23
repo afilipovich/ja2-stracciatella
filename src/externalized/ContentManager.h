@@ -198,4 +198,7 @@ public:
 	virtual const ST::string* getNewString(size_t stringId) const = 0;
 
 	virtual const ST::string& getLandTypeString(size_t index) const = 0;
+
+	/* Gets the enabled mods and their version strings as a map */
+	virtual const std::vector<std::pair<ST::string, ST::string>> getEnabledMods() const = 0;
 };

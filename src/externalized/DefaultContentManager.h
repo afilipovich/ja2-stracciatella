@@ -153,6 +153,8 @@ public:
 	virtual const LoadingScreen* getLoadingScreenForSector(uint8_t sectorId, uint8_t sectorLevel, bool isNight) const override;
 	virtual const LoadingScreen* getLoadingScreen(uint8_t index) const override;
 
+	/* Gets the enabled mods and their version strings */
+	virtual const std::vector<std::pair<ST::string, ST::string>> getEnabledMods() const override;
 protected:
 	RustPointer<EngineOptions> m_engineOptions;
 	RustPointer<ModManager> m_modManager;
